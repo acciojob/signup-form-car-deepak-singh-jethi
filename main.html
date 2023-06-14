@@ -8,6 +8,85 @@
 
 <body>
 	<!-- the entire body must be written by student -->
+
+	<form action="/submit" method="post">
+      <!-- name -->
+      <label for="name">NAME:</label>
+      <input type="text" name="name" id="name" required placeholder="Name" />
+      <br /><br />
+      <!-- email -->
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        required
+        placeholder="Email" />
+      <br /><br />
+
+      <!-- gender -->
+
+      <label for="gender">Gender:</label>
+      <label for="gender_m">Male</label>
+      <input type="radio" name="gender" id="gender_m" required />
+      <label for="gender_f">Female</label>
+      <input type="radio" name="gender" id="gender_f" required />
+      <br /><br />
+
+      <!-- cars -->
+
+      <label for="cars">Choose your car</label>
+
+      <select
+        name="cars"
+        id="cars"
+        required
+        aria-placeholder="Please choose you car">
+        <option value="bmw">BMW</option>
+        <option value="audi">Audi</option>
+        <option value="mer">Mercedez</option>
+      </select>
+      <br />\<br />
+
+      <!-- Age -->
+
+      <label for="age"> Age</label>
+
+      <input type="number" name="age" id="age" placeholder="age" />
+      <br /><br />
+
+      <!-- dob -->
+
+      <label for="dob"> Date Of Birth:</label>
+      <input type="date" name="" id="" />
+
+      <br /><br />
+
+      <label for="tel">Contact number:</label>
+      <input type="tel" name="tel" id="tel" placeholder="xxx-xxx-xxxx" />
+      <br /><br />
+
+      <!-- password -->
+
+      <label for="password">password</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        required
+        placeholder="Password" />
+
+      <br /><br />
+
+      <!-- checkbox -->
+
+      <label for="tos">I agree to the TOS</label>
+      <input type="checkbox" name="tos" id="tos" required />
+
+      <br /><br />
+      <!-- submit -->
+      <input type="submit" />
+    </form>
     <script type="text/javascript" src="./script.js">
 </script>
 
