@@ -7,11 +7,9 @@
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-
-	<form action="/submit" method="post">
+	 <form action="/submit" method="post">
       <!-- name -->
-      <label for="name">Name:</label>
+      <label for="name">NAME:</label>
       <input type="text" name="name" id="name" required placeholder="Name" />
       <br /><br />
       <!-- email -->
@@ -35,13 +33,14 @@
 
       <!-- cars -->
 
-      <label for="cars">Car Brands</label>
+      <label for="cars">Choose your car</label>
 
       <select
         name="cars"
         id="cars"
         required
         aria-placeholder="Please choose you car">
+        <option value="" disabled selected>Please choose an option</option>
         <option value="bmw">BMW</option>
         <option value="audi">Audi</option>
         <option value="mer">Mercedez</option>
@@ -50,15 +49,15 @@
 
       <!-- Age -->
 
-      <label for="age">Age</label>
+      <label for="age"> Age</label>
 
-      <input type="number" name="age" id="age" placeholder="age" />
+      <input type="number" name="age" min="0" id="age" placeholder="age" />
       <br /><br />
 
       <!-- dob -->
 
-      <label for="dob">DOB*</label>
-      <input type="date" name="" id="dob" />
+      <label for="dob"> Date Of Birth:</label>
+      <input type="date" name="" id=""  required/>
 
       <br /><br />
 
@@ -85,10 +84,10 @@
 
       <br /><br />
       <!-- submit -->
-      <button>Submit</button>
+     <button type="submit"> Submit</button>
     </form>
-    <script type="text/javascript" src="./script.js">
-</script>
+
+   
 
 </body>
 
